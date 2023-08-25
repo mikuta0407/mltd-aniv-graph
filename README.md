@@ -1,6 +1,5 @@
 # mltd-aniv-graph
 
-cron (root)
-```bash
-su -s /bin/bash - www-data -c "php /path/to/mltd-aniv-graph/generate-csv.php"
-```
+index.htmlにアクセスすると良い感じでグラフが出せます。
+
+[Demo(というよりはここでいい)](https://mikuta0407.net/tools/imas/mltd-aniv-graph/)

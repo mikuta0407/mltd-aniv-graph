@@ -4,23 +4,145 @@
     <title>MLTD Graph</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="./main.js"></script>
 </head>
 
 <body>
     <!-- グラフサイズを決める -->
     <style>
-        #chart {
+        .chart {
             max-width: 640px;
             max-height: 480px;
         }
     </style>
 
+    <h1>290	R@ise a Good Sign!</h1>
+
+    <table>
+        <tr>
+            <td><label><input type="checkbox" value="1">天海 春香</label></td>
+            <td><label><input type="checkbox" value="2">如月 千早</label></td>
+            <td><label><input type="checkbox" value="3">星井 美希</label></td>
+            <td><label><input type="checkbox" value="4">萩原 雪歩</label></td>
+            <td><label><input type="checkbox" value="5">高槻 やよい</label></td>
+            <td><label><input type="checkbox" value="6">菊地 真</label></td>
+            <td><label><input type="checkbox" value="7">水瀬 伊織</label></td>
+            <td><label><input type="checkbox" value="8">四条 貴音</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="9">秋月 律子</label></td>
+            <td><label><input type="checkbox" value="10">三浦 あずさ</label></td>
+            <td><label><input type="checkbox" value="11">双海 亜美</label></td>
+            <td><label><input type="checkbox" value="12">双海 真美</label></td>
+            <td><label><input type="checkbox" value="13">我那覇 響</label></td>
+            <td><label><input type="checkbox" value="14">春日 未来</label></td>
+            <td><label><input type="checkbox" value="15">最上 静香</label></td>
+            <td><label><input type="checkbox" value="16">伊吹 翼</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="17">田中 琴葉</label></td>
+            <td><label><input type="checkbox" value="18">島原 エレナ</label></td>
+            <td><label><input type="checkbox" value="19">佐竹 美奈子</label></td>
+            <td><label><input type="checkbox" value="20">所 恵美</label></td>
+            <td><label><input type="checkbox" value="21">徳川 まつり</label></td>
+            <td><label><input type="checkbox" value="22">箱崎 星梨花</label></td>
+            <td><label><input type="checkbox" value="23">野々原 茜</label></td>
+            <td><label><input type="checkbox" value="24">望月 杏奈</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="25">ロコ</label></td>
+            <td><label><input type="checkbox" value="26">七尾 百合子</label></td>
+            <td><label><input type="checkbox" value="27">高山 紗代子</label></td>
+            <td><label><input type="checkbox" value="28">松田 亜利沙</label></td>
+            <td><label><input type="checkbox" value="29">高坂 海美</label></td>
+            <td><label><input type="checkbox" value="30">中谷 育</label></td>
+            <td><label><input type="checkbox" value="31">天空橋 朋花</label></td>
+            <td><label><input type="checkbox" value="32">エミリー スチュアート</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="33">北沢 志保</label></td>
+            <td><label><input type="checkbox" value="34">舞浜 歩</label></td>
+            <td><label><input type="checkbox" value="35">木下 ひなた</label></td>
+            <td><label><input type="checkbox" value="36">矢吹 可奈</label></td>
+            <td><label><input type="checkbox" value="37">横山 奈緒</label></td>
+            <td><label><input type="checkbox" value="38">二階堂 千鶴</label></td>
+            <td><label><input type="checkbox" value="39">馬場 このみ</label></td>
+            <td><label><input type="checkbox" value="40">大神 環</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="41">豊川 風花</label></td>
+            <td><label><input type="checkbox" value="42">宮尾 美也</label></td>
+            <td><label><input type="checkbox" value="43">福田 のり子</label></td>
+            <td><label><input type="checkbox" value="44">真壁 瑞希</label></td>
+            <td><label><input type="checkbox" value="45">篠宮 可憐</label></td>
+            <td><label><input type="checkbox" value="46">百瀬 莉緒</label></td>
+            <td><label><input type="checkbox" value="47">永吉 昴</label></td>
+            <td><label><input type="checkbox" value="48">北上 麗花</label></td>
+        </tr>
+        <tr>
+            <td><label><input type="checkbox" value="49">周防 桃子</label></td>
+            <td><label><input type="checkbox" value="50">ジュリア</label></td>
+            <td><label><input type="checkbox" value="51">白石 紬</label></td>
+            <td><label><input type="checkbox" value="52">桜守 歌織</label></td>
+        </tr>
+    </table>
     <!-- 取得時間の挿入場所 -->
     <div id="time"></div>
 
-    <!-- グラフのcanvas -->
-    <canvas id="chart"></canvas>
+
+    <div id="canvas_1"></div>
+    <div id="canvas_2"></div>
+    <div id="canvas_3"></div>
+    <div id="canvas_4"></div>
+    <div id="canvas_5"></div>
+    <div id="canvas_6"></div>
+    <div id="canvas_7"></div>
+    <div id="canvas_8"></div>
+    <div id="canvas_9"></div>
+    <div id="canvas_10"></div>
+    <div id="canvas_11"></div>
+    <div id="canvas_12"></div>
+    <div id="canvas_13"></div>
+    <div id="canvas_14"></div>
+    <div id="canvas_15"></div>
+    <div id="canvas_16"></div>
+    <div id="canvas_17"></div>
+    <div id="canvas_18"></div>
+    <div id="canvas_19"></div>
+    <div id="canvas_20"></div>
+    <div id="canvas_21"></div>
+    <div id="canvas_22"></div>
+    <div id="canvas_23"></div>
+    <div id="canvas_24"></div>
+    <div id="canvas_25"></div>
+    <div id="canvas_26"></div>
+    <div id="canvas_27"></div>
+    <div id="canvas_28"></div>
+    <div id="canvas_29"></div>
+    <div id="canvas_30"></div>
+    <div id="canvas_31"></div>
+    <div id="canvas_32"></div>
+    <div id="canvas_33"></div>
+    <div id="canvas_34"></div>
+    <div id="canvas_35"></div>
+    <div id="canvas_36"></div>
+    <div id="canvas_37"></div>
+    <div id="canvas_38"></div>
+    <div id="canvas_39"></div>
+    <div id="canvas_40"></div>
+    <div id="canvas_41"></div>
+    <div id="canvas_42"></div>
+    <div id="canvas_43"></div>
+    <div id="canvas_44"></div>
+    <div id="canvas_45"></div>
+    <div id="canvas_46"></div>
+    <div id="canvas_47"></div>
+    <div id="canvas_48"></div>
+    <div id="canvas_49"></div>
+    <div id="canvas_50"></div>
+    <div id="canvas_51"></div>
+    <div id="canvas_52"></div>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
